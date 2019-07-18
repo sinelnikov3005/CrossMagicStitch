@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+//---Переменные---//
+$body_bg_color: aliceblue;
+$intro_bg_image: url('../img/start-page_image.jpg');
+$intro_btn_b-radius: 100%;
+
+
+
+//---Мои Стили---//
+html, body { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $body_bg_color;
+}
+
+//#section1 {
+//    background: $bg_intro;
+//}
+//
+//#section2 {
+//    
+//}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: $intro_bg_image no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+    filter: blur(px)
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+/*    max-width: 1000px; */
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #f07d10;
+    text-shadow: 0px 0px #000;
+    font-size: 500%;
+}
+
+.btn {
+    border-radius: $intro_btn_b-radius;
+    font-family: 'Oswald', sans-serif;
+    color: #5b8300;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid #5b8300 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #fff;
+    border: solid #fff 3px;
+}
+
+
+p {
+    font-size: 160%;
+    line-height: 210%;
+    text-align: justify;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 250%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 100%;
+        line-height: 160%;
+    }
+}
+
+
+//////////////////////////////////////////////////
+//h1{
+//    font-size: 5em;
+//    font-family: arial,helvetica;
+//    color: red;
+//    margin:0;
+//    padding:0;
+//}
+//
+//.section{
+//    text-align:center;
+//    background: green;
+//    background-size: cover;
+//}
+//////////////////////////////////////////////////
+//.slide{
+//    background-size: cover;
+//}
+//
+//
+//#section1{
+//    background-image: url(../img/start-page_image.jpg);
+//}
+//#section1 h1{
+//    top: 50%;
+//    transform: translateY(-50%);
+//    position: relative;
+//}
+//
+//#section2{
+//    
+//}
+//
+//#section3{
+//    background-image: url(imgs/bg3.jpg);
+//    padding: 6% 0 0 0;
+//}
+//
+//#section4{
+//    background-image: url(imgs/bg4.jpg);
+//    padding: 6% 0 0 0;
+//}
+//#section4 h1{
+//    color: #000;
+//}
+//
+//
+///*Adding background for the slides
+//* --------------------------------------- */
+//#slide1{
+//    background-image: url(imgs/bg2.jpg);
+//    padding: 6% 0 0 0;
+//}
+//#slide2{
+//    background-image: url(imgs/bg5.jpg);
+//    padding: 6% 0 0 0;
+//}
+//
+//
+///* Bottom menu
+//* --------------------------------------- */
+//#infoMenu li a {
+//    color: #fff;
+//}
